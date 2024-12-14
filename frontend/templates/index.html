@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>YummyBread Mold Detector</title>
+            <link href="../static/styles.css" rel="stylesheet">
+            <link href="../static/images/bready.ico" rel="icon">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="UTF-8">
+        </head>
+
+        <body>
+            <nav class="header">
+                <img src="../static/images/bready_logo.png" href="#home"> 
+            </nav>
+
+            <section class="home" id="home">
+                <div class="title">
+                    <p class="heading">Bread Mold Detector</p>
+                </div>
+
+                <div class="upload">
+                    <label for="input-file">Upload Image</label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                    <button class="submit-button" type="submit" id="submission">Submit</button>
+                </div>
+                <div class="uploaded-image">
+                    <img src="" id="bread-image">
+                    <script src="../static/results.js"></script>
+                </div>
+
+                <p class="results-title">Results Section</p>
+                <div class="result">
+                    <!-- text result -->
+                </div>
+                <div class ="result-image">
+                    <!-- image result -->
+                </div>
+            </section>
+
+            <section class="about">
+                <p class="about-title">About the Model</p>
+                <p class="about-body">
+                    This AI detector relies on two models to perform classification and detection. <br> 
+                    First, it passes through a custom CNN to determine if mold is detected. <br>
+                    If the classifier detects mold, then it will pass through the faster RCNN object 
+                    detection model and predict bounding boxes for mold.
+                </p>
+            </section>
+            
+            <footer>
+                <p class="footer-text">2024 - Object Classification & Detection</p>
+            </footer>
+        </body>
+</html>
+
