@@ -7,4 +7,7 @@ Develop a system that can classify and detect bread mold. This is alongside extr
 Developed using a flask backend and a vanilla HTML-CSS-JS frontend.
 
 ## Instructions to Run
-Assuming all of the requirements are installed to run this program (requirements.txt needs updating), this can be ran by opening the terminal, switching to the backend, and running "python main.py"
+Assuming all of the requirements are installed to run this program (requirements.txt needs updating), this can be ran by:
+1. Opening the terminal
+2. switching to the backend folder
+3. Running "python main.py"
